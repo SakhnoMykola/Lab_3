@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_3 Sakhno</title>
+</head>
+<body>
+    <form>
+        <table border="1" width="25%">
+            <tr> 
+                <th colspan="2">Pizza shop 2.0</th>
+            </tr>
+            <tr> 
+                <td>
+                    <label for="Name">Name</label>
+                </td>
+                <td>
+                    <input id="Name" type="text" placeholder="Name" required pattern="[A-Z]{2,10}" title="Enter a name with at least 2 and no more than 10 capital letters">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Topping">Pizza Topping</label>
+                </td>
+                <td>
+                    <input name="Topping" id="Topping" type="radio">
+                    <label for="Topping">Supreme</label><br>
+
+                    <input name="Topping" id="Topping2" type="radio">
+                    <label for="Topping2">Vegetarian</label><br>
+
+                    <input name="Topping" id="Topping3" type="radio">
+                    <label for="Topping3">Hawaiian</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Sauce">Pizza Sauce</label>
+                </td>
+                <td>
+                    <select id="Sauce"> 
+                        <option value="Tomato">Tomato</option>
+                        <option value="Cheese">Cheese</option>
+                        <option value="BBQ">BBQ</option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label for="Optional1">Optional Extras</label>
+                </td>
+                <td>
+                    <input name="Optional" id="Optional1" type="checkbox">
+                    <label for="Optional1">Extra cheese</label>
+
+                    <input name="Optional" id="Optional2" type="checkbox">
+                    <label for="Optional2">Gluten Free Base</label>
+                </td>
+            </tr>
+            <tr> 
+                <td colspan="2">
+                    <label for="Delivery">Delivery instructions:</label><br>
+                    <textarea id="Delivery" cols="55" rows="5" placeholder="Postcod"></textarea>
+                </td>
+            </tr>
+            <tr> 
+                <td colspan="2">
+                    <button>Send my Order</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
